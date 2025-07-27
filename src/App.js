@@ -223,7 +223,7 @@ const App = () => {
         <div className="h-64 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center relative overflow-hidden">
           {!imageError ? (
             <img
-              src={plant.image}
+              src={process.env.PUBLIC_URL + plant.image}
               alt={plant.name}
               className="w-full h-full object-cover"
               onError={() => setImageError(true)}
